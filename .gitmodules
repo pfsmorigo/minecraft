@@ -1,0 +1,12 @@
+[submodule "AMIDST"]
+	path = AMIDST
+	url = https://github.com/skiphs/AMIDST.git
+[submodule "mcedit"]
+	path = mcedit
+	url = https://github.com/mcedit/mcedit.git
+[submodule "mcmap"]
+	path = mcmap
+	url = https://github.com/Zahl/mcmap.git
+[submodule "Minecraft-Overviewer"]
+	path = Minecraft-Overviewer
+	url = https://github.com/overviewer/Minecraft-Overviewer.git

@@ -1,0 +1,27 @@
+#!/bin/bash
+clear
+
+MINECRAFT_DIR=$HOME/.minecraft
+TMPFILE=/tmp/minecraft_changes
+
+cd ~/.minecraft/saves/SmoWorld
+git status > $TMPFILE
+
+if [ -s $TMPFILE ]; then
+	zenity --text-info --title Minecraft --filename $TMPFILE
+fi
+
+JAVA=/usr/bin/java
+
+cd ~/.minecraft
+
+case $1 in
+        original)
+			$JAVA -Xmx1024M -Xms512M -jar Minecraft.jar
+			;;
+
+        *)
+			$JAVA -jar magic/MagicLauncher.jar
+			;;
+esac
+

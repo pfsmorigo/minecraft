@@ -1,0 +1,9 @@
+#! /bin/bash
+
+cd ~/projects/minecraft/Minecraft-Overviewer/
+
+#rm -rf /mnt/disk/beirut/minecraft/overviewer/SmoWorld
+#./overviewer.py --verbose --forcerender --config=$HOME/projects/minecraft/overviewer_config.py
+
+./overviewer.py --config=$HOME/projects/minecraft/overviewer_config.py
+./overviewer.py --genpoi --config=$HOME/projects/minecraft/overviewer_config.py
